@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya | Web Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Porto<span>folio.</span></a>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active" style="--i: 1">Home</a>
+        <a href="#skills" style="--i: 2">Skills</a>
+        <a href="#projects" style="--i: 3">Projects</a>
+        <a href="#contact" style="--i: 4">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Halo, Nama Saya</h3>
+        <h1>Andi Rasyihan Jawahir</h1>
+        <h3>Saya seorang <span id="typing-text"></span></h3>
+        <p>
+          Saya adalah web developer antusias yang suka membuat website modern,
+          responsif, dan interaktif. Mari wujudkan ide Anda menjadi digital
+          reality.
+        </p>
+
+        <div class="social-media">
+          <div class="social-media">
+            <a href="https://github.com/AndiRasyihan" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://instagram.com/andi_rasyihan" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/andi-rasyihan-0296833aa/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <a href="CV_Andi_Rasyihan_Jawahir.pdf" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="me.jpg" alt="Foto Profil" />
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="skills-container">
+        <div class="skill-box animate-scroll">
+          <i class="fa-brands fa-html5"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-box animate-scroll">
+          <i class="fa-brands fa-css3-alt"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-box animate-scroll">
+          <i class="fa-brands fa-js"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-box animate-scroll">
+          <i class="fa-brands fa-react"></i>
+          <h3>React JS</h3>
+        </div>
+        <div class="skill-box animate-scroll">
+          <i class="fa-brands fa-bootstrap"></i>
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="skill-box animate-scroll">
+          <i class="fa-brands fa-git-alt"></i>
+          <h3>Git</h3>
+        </div>
+        <div class="skill-box animate-scroll">
+          <i class="fa-solid fa-pen-nib"></i>
+          <h3>UI/UX Design</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="projects">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box animate-scroll">
+          <img src="rinra.png" alt="Project 1" />
+          <div class="portfolio-layer">
+            <h4>The Rinra Makassar</h4>
+            <p>
+              Website profil hotel premium yang menampilkan konsep urban resort,
+              integrasi mall, dan panduan wisata lokal Makassar dalam balutan
+              desain modern yang responsif.
+            </p>
+            <a href="https://github.com/AndiRasyihan/the_rinra_project"
+              ><i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box animate-scroll">
+          <img src="resto.png" alt="Project 2" />
+          <div class="portfolio-layer">
+            <h4>Dia Resto & Cafe</h4>
+            <p>
+              Aplikasi E-Menu modern dengan fitur input nomor meja, filter
+              kategori makanan/minuman, dan manajemen keranjang pesanan yang
+              interaktif.
+            </p>
+            <a><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box animate-scroll">
+          <img src="wedding.png" alt="Project 3" />
+          <div class="portfolio-layer">
+            <h4>digital invitation</h4>
+            <p>
+              Undangan pernikahan digital dengan fitur RSVP, peta lokasi
+              interaktif, dan animasi visual yang estetik.
+            </p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="#" class="animate-scroll">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        Copyright &copy; 2023 by Andi Rasyihan Jawahir.| All Rights Reserved.
+      </p>
+      <div class="footer-iconTop">
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
