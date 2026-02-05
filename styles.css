@@ -467,6 +467,7 @@ footer p {
 
 @media (max-width: 768px) {
   #menu-icon {
+    flex-direction: column;
     display: block;
   }
 
@@ -492,6 +493,9 @@ footer p {
   .home {
     flex-direction: column;
     padding-top: 120px;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 70px;
   }
   .home-content {
     text-align: center;
@@ -500,6 +504,7 @@ footer p {
     width: 70vw;
     height: 70vw;
     margin-top: 30px;
+    margin-bottom: 20px;
   }
 
   .input-box input {
