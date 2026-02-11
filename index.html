@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portofolio Saya | Web Developer</title>
 
+    <!-- Google Fonts (Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Font Awesome untuk Icon -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <!-- File CSS Utama -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Header Section (Logo & Navigasi) -->
     <header class="header">
       <a href="#" class="logo">Porto<span>folio.</span></a>
 
+      <!-- Icon Menu untuk Mobile (Hamburger Menu) -->
       <i class="fa-solid fa-bars" id="menu-icon"></i>
 
+      <!-- Link Navigasi -->
       <nav class="navbar">
         <a href="#home" class="active" style="--i: 1">Home</a>
         <a href="#skills" style="--i: 2">Skills</a>
@@ -32,10 +38,12 @@
       </nav>
     </header>
 
+    <!-- Home Section (Bagian Utama/Hero) -->
     <section class="home" id="home">
       <div class="home-content">
         <h3>Halo, Nama Saya</h3>
         <h1>Andi Rasyihan Jawahir</h1>
+        <!-- Elemen untuk efek mengetik (Typing Effect) -->
         <h3>Saya seorang <span id="typing-text"></span></h3>
         <p>
           Saya adalah web developer antusias yang suka membuat website modern,
@@ -43,6 +51,7 @@
           reality.
         </p>
 
+        <!-- Link Sosial Media -->
         <div class="social-media">
           <div class="social-media">
             <a href="https://github.com/AndiRasyihan" target="_blank">
@@ -68,10 +77,12 @@
       </div>
     </section>
 
+    <!-- Skills Section (Keahlian) -->
     <section class="skills" id="skills">
       <h2 class="heading">My <span>Skills</span></h2>
 
       <div class="skills-container">
+        <!-- Item Skill dengan animasi scroll -->
         <div class="skill-box animate-scroll">
           <i class="fa-brands fa-html5"></i>
           <h3>HTML5</h3>
@@ -103,10 +114,12 @@
       </div>
     </section>
 
+    <!-- Projects Section (Portofolio) -->
     <section class="portfolio" id="projects">
       <h2 class="heading">Latest <span>Projects</span></h2>
 
       <div class="portfolio-container">
+        <!-- Project Item 1 -->
         <div class="portfolio-box animate-scroll">
           <img src="rinra.png" alt="Project 1" />
           <div class="portfolio-layer">
@@ -122,6 +135,7 @@
           </div>
         </div>
 
+        <!-- Project Item 2 -->
         <div class="portfolio-box animate-scroll">
           <img src="resto.png" alt="Project 2" />
           <div class="portfolio-layer">
@@ -135,6 +149,7 @@
           </div>
         </div>
 
+        <!-- Project Item 3 -->
         <div class="portfolio-box animate-scroll">
           <img src="wedding.png" alt="Project 3" />
           <div class="portfolio-layer">
@@ -149,6 +164,7 @@
       </div>
     </section>
 
+    <!-- Contact Section (Formulir Kontak) -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
@@ -172,15 +188,18 @@
       </form>
     </section>
 
+    <!-- Footer Section -->
     <footer>
       <p>
         Copyright &copy; 2026 by Andi Rasyihan Jawahir.| All Rights Reserved.
       </p>
       <div class="footer-iconTop">
+        <!-- Tombol kembali ke atas -->
         <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
       </div>
     </footer>
 
+    <!-- File JavaScript Utama -->
     <script src="script.js"></script>
   </body>
 </html>

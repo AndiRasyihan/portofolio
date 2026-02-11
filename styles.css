@@ -1,16 +1,17 @@
 /* styles.css — dipisahkan dari index.html */
 
-/* --- CSS VARIABLES & RESET --- */
+/* Variabel CSS untuk konsistensi warna dan efek */
 :root {
   --bg-color: #0f172a;
   --second-bg-color: #1e293b;
   --text-color: #e2e8f0;
-  --main-color: #38bdf8; /* Warna Aksen Biru Neon */
+  --main-color: #38bdf8;
   --hover-color: #0ea5e9;
   --glass-bg: rgba(30, 41, 59, 0.7);
   --transition: all 0.4s ease;
 }
 
+/* Reset CSS dasar untuk menghapus margin/padding default browser */
 * {
   margin: 0;
   padding: 0;
@@ -19,33 +20,35 @@
   list-style: none;
   border: none;
   outline: none;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* Scroll halus antar section */
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  overflow-x: hidden;
+  overflow-x: hidden; /* Mencegah scroll horizontal yang tidak diinginkan */
 }
 
+/* Padding umum untuk setiap section */
 section {
   padding: 100px 10%;
 }
 
+/* Warna aksen untuk elemen span */
 span {
   color: var(--main-color);
 }
 
 /* --- NAVBAR --- */
 header {
-  position: fixed;
+  position: fixed; /* Navbar tetap di atas saat scroll */
   top: 0;
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
+  background: var(--glass-bg); /* Efek transparan */
+  backdrop-filter: blur(10px); /* Efek blur di belakang navbar */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,6 +72,7 @@ header {
   font-weight: 500;
   margin-left: 35px;
   transition: var(--transition);
+  /* Animasi masuk navbar */
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
@@ -206,6 +210,7 @@ header {
 
 .skills-container {
   display: grid;
+  /* Grid responsif: kolom menyesuaikan ukuran layar */
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
   text-align: center;
@@ -242,6 +247,7 @@ header {
 /* --- PROJECTS SECTION --- */
 .portfolio-container {
   display: grid;
+  /* Grid 3 kolom */
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   align-items: center;
@@ -268,6 +274,7 @@ header {
   transform: scale(1.1);
 }
 
+/* Overlay deskripsi project yang muncul saat hover */
 .portfolio-layer {
   position: absolute;
   bottom: 0;
@@ -388,6 +395,7 @@ footer p {
 }
 
 /* --- ANIMATION KEYFRAMES --- */
+/* Definisi animasi slide dan zoom */
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -451,6 +459,7 @@ footer p {
 }
 
 /* Class untuk JS Intersection Observer */
+/* Class ini ditambahkan via JS saat elemen masuk viewport */
 .show-animate {
   opacity: 1 !important;
   transform: translateY(0) !important;
@@ -459,12 +468,14 @@ footer p {
 }
 
 /* --- RESPONSIVE MEDIA QUERIES --- */
+/* Penyesuaian untuk Tablet */
 @media (max-width: 991px) {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Penyesuaian untuk Mobile */
 @media (max-width: 768px) {
   #menu-icon {
     flex-direction: column;
